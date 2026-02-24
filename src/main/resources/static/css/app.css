@@ -1,0 +1,148 @@
+:root {
+    --portal-primary: #8a1c1c;
+    --portal-accent: #f59e0b;
+    --portal-bg-1: #fff8f1;
+    --portal-bg-2: #ffe8d6;
+    --portal-text: #2a1a12;
+}
+
+body {
+    color: var(--portal-text);
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+.portal-bg {
+    background:
+        radial-gradient(circle at top right, #dbeafe 0%, transparent 45%),
+        radial-gradient(circle at top left, #e0f2fe 0%, transparent 40%),
+        linear-gradient(180deg, var(--portal-bg-1) 0%, var(--portal-bg-2) 100%);
+    min-height: 100vh;
+}
+
+.portal-topbar {
+    background: linear-gradient(90deg, var(--portal-primary) 0%, var(--portal-accent) 100%);
+}
+
+.portal-card-header {
+    background: linear-gradient(90deg, var(--portal-primary) 0%, var(--portal-accent) 100%);
+    color: #f8fafc;
+}
+
+.question-block {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 16px;
+    background: #ffffff;
+}
+
+.option-item {
+    display: block;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 10px 12px;
+    background: #f8fafc;
+    cursor: pointer;
+}
+
+.option-item:hover {
+    border-color: #94a3b8;
+    background: #f1f5f9;
+}
+
+.role-switch {
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f8fafc;
+}
+
+.role-switch .nav-item {
+    margin-bottom: 0;
+}
+
+.role-switch .nav-link {
+    border: 0;
+    border-radius: 0;
+    color: #334155;
+    font-weight: 600;
+    padding: 12px 10px;
+    transition: all 0.2s ease-in-out;
+    background: #f8fafc;
+}
+
+.role-switch .nav-link:hover {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+.role-switch .nav-link.active {
+    background: linear-gradient(90deg, var(--portal-primary), var(--portal-accent));
+    color: #ffffff;
+}
+
+.portal-footer {
+    margin-top: 28px;
+    background: #3b2419;
+    color: #f6d4b8;
+    padding: 16px 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.portal-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.exam-guard {
+    border: 1px solid #fed7aa;
+    background: #fff7ed;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.exam-guard strong {
+    color: #9a3412;
+}
+
+.exam-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exam-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08);
+}
+
+code,
+.code-pill {
+    color: #7c2d12 !important;
+    background: #ffedd5;
+    border-radius: 8px;
+    padding: 2px 8px;
+}
+
+.table code,
+.table .code-pill {
+    color: inherit !important;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+}
+
+.index-exam-box {
+    border: 1px solid #f1c9a8;
+    background: #fff8f1;
+    border-radius: 10px;
+    padding: 8px 10px;
+}
+
+.index-exam-line {
+    border-bottom: 1px solid #f1c9a8;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
